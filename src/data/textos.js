@@ -4,7 +4,7 @@ export const textos = [
     titulo: "Experiencia en tecnologías avanzadas y metodologías ágiles",
     descripcion:
       "Nuestra empresa cuenta con un equipo altamente capacitado y experimentado en el uso de las últimas tecnologías y metodologías ágiles de desarrollo de software. Esto nos permite ofrecer soluciones de alta calidad y eficiencia a nuestros clientes.",
-    imagen: "../../imagenes/0metodologiasAgiles.jpg",
+    imagen: "../../imagenes/0metodologiasAgiles.png",
   },
   {
     id: 1,
@@ -53,7 +53,7 @@ export const textos = [
     titulo: "Diseño de soluciones altamente personalizadas y adaptadas a la cultura de cada empresa",
     descripcion:
       "Nuestra empresa cuenta con un equipo altamente capacitado y experimentado en el uso de las últimas tecnologías y metodologías ágiles de desarrollo de software. Esto nos permite ofrecer soluciones de alta calidad y eficiencia a nuestros clientes.",
-    imagen: "../../imagenes/7diseñoDeSoluciones.jpg",
+    imagen: "../../imagenes/7diseñoDeSoluciones.png",
   },
   {
     id: 8,

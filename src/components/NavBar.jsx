@@ -3,6 +3,20 @@ import React, { useState } from 'react';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleClickOutside = event => {
+    if (event.target.closest(".nav-dropdown")) {
+      return;
+    }
+    setIsOpen(false);
+  };
+
+  React.useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <nav className="bg-gray-800 p-4">
       <div className="container mx-auto flex items-center justify-between p-2">
@@ -27,12 +41,15 @@ const Navbar = () => {
             </svg>
           </button>
           {isOpen && (
-            <div className="bg-gray-800 rounded py-2 px-4 mt-2 absolute right-0">
+            <div className="nav-dropdown bg-gray-800 rounded py-2 px-4 mt-2 absolute right-0">
               <a className="block px-2 py-1 text-blue-400 hover:bg-gray-700" href="#">
-                Login
+                Inicio
               </a>
-              <a className="block px-2 py-1 text-blue-400 hover:bg-gray-700" href="#">
-                Salir
+              <a className="block px-2 py-1 text-blue-400 hover:bg-gray-700" href="##">
+                Contacto
+              </a>
+              <a className="block px-2 py-1 text-blue-400 hover:bg-gray-700" href="###">
+                Quiénes somos
               </a>
             </div>
           )}
