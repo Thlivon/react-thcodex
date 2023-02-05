@@ -20,7 +20,7 @@ function TextList() {
   const styles = {
     background: {
       backgroundImage:
-        "url(https://i.giphy.com/media/SdNTGnxfCT6eNqxWO8/giphy.gif)", //ITRemFlr5tS39AzQUL g7hbqhnKnewIIBbTu4 U4FkC2VqpeNRHjTDQ5 xUPGcmSyByD8BJ7pcY l3vR3LpUR3uFkFXlC
+        "url(https://i.giphy.com/media/U4FkC2VqpeNRHjTDQ5/giphy.gif)", //ITRemFlr5tS39AzQUL g7hbqhnKnewIIBbTu4 U4FkC2VqpeNRHjTDQ5 xUPGcmSyByD8BJ7pcY l3vR3LpUR3uFkFXlC SdNTGnxfCT6eNqxWO8
       backgroundRepeat: "repeat",
       backgroundSize: "100% 100%",
       backgroundPosition: "center",

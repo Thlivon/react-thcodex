@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { CSSTransition } from "react-transition-group";
+import "../index.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleClickOutside = event => {
+  const handleClickOutside = (event) => {
     if (event.target.closest(".nav-dropdown")) {
       return;
     }
@@ -41,15 +43,24 @@ const Navbar = () => {
             </svg>
           </button>
           {isOpen && (
-            <div className="nav-dropdown bg-gray-800 rounded py-2 px-4 mt-2 absolute right-0">
-              <a className="block px-2 py-1 text-blue-400 hover:bg-gray-700" href="#">
+            <div className="bg-gray-900 rounded py-2 px-4 mt-2 absolute right-0 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 top-20" id="menu-background">
+              <a
+                className="block px-2 py-1 text-blue-200 border-b border-gray-50 font-bold"
+                href="#"
+              >
                 Inicio
               </a>
-              <a className="block px-2 py-1 text-blue-400 hover:bg-gray-700" href="##">
+              <a
+                className="block px-2 py-1 text-blue-200 border-b border-gray-50 font-bold"
+                href="##"
+              >
                 Contacto
               </a>
-              <a className="block px-2 py-1 text-blue-400 hover:bg-gray-700" href="###">
-                Quiénes somos
+              <a
+                className="block px-2 py-1 text-blue-200 font-bold"
+                href="###"
+              >
+                Nosotros
               </a>
             </div>
           )}

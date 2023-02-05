@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.top-20 {
+  top: 0px;
+  transform: translateY(20px);
+}
+
+#menu-background {
+  background-image: url(../../imagenes/menuDesplegable.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

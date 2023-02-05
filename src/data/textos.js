@@ -57,7 +57,7 @@ export const textos = [
   },
   {
     id: 8,
-    titulo: "Seguridad de la información",
+    titulo: "La seguridad de la información es lo más importante",
     descripcion:
       "La seguridad de la información es una prioridad para nosotros. Por lo tanto, implementamos medidas de seguridad rigurosas para proteger los datos sensibles de nuestros clientes. Esto incluye cifrado de datos, autenticación de usuarios, control de acceso, respaldo de datos y monitoreo de seguridad en tiempo real.",
     imagen: "../../imagenes/8seguridadDeLaInformacion.jpg",
